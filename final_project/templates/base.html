@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+    
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href = {{ url_for('static', filename='style.css') }} rel = "stylesheet"/>
+    <title>Margiela Tabi Boots</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #9b0e09">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">Margiela Tabi Boots</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Tabi Boot</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/gallery"> Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/margiela">Maison Margiela</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- New Moon Scrollbar -->
+<style>
+	::-webkit-scrollbar {
+	width: 20px;
+	height: 7px;
+	background-color:yellow;
+	}
+	::-webkit-scrollbar-button:start:decrement,
+	::-webkit-scrollbar-button:end:increment {display: block;}
+	::-webkit-scrollbar-button:vertical:start:increment,
+	::-webkit-scrollbar-button:vertical:end:decrement {display: none;}
+	::-webkit-scrollbar-button:end:increment 
+        {background-image:url(http://www.snazzyspace.com/images/arrowdown.png);
+	background-repeat: no-repeat;background-position:center;
+        -webkit-box-shadow: inset 0 0 16px rgba(214,214,214,0.9);}
+</style>
+<style>
+	::-webkit-scrollbar-button:start:decrement 
+	{background-image: url(https://www.usmint.gov/wordpress/wp-content/uploads/2020/12/2021-general-george-washington-crossing-the-delaware-quarter-uncirculated-obverse-philadelphia-768x768.jpg);
+	background-repeat: no-repeat;background-position:center;
+        -webkit-box-shadow: inset 0 0 16px rgba(214,214,214,0.9);}
+	::-webkit-scrollbar-thumb {
+	background-color:yellow;
+        background:url(https://upload.wikimedia.org/wikipedia/commons/f/f1/Ski_trail_rating_symbol_red_circle.png); 
+        background-size: 400% auto;
+        background-repeat: no-repeat;
+	border-left:0px solid yellow;
+	border-right:0px solid yellow;
+	border-bottom:0px solid #E5E5E5;
+	border-top:0px solid #E5E5E5;
+	border-radius:0%;
+	}
+	#scrollbardolliecrave {
+	width:96px;
+	height:20px;
+	position: fixed;    
+	left: 0px;    
+	bottom: 0px;
+	}
+	::-webkit-scrollbar-track {
+        background:url(http://www.snazzyspace.com/images/track.png); 
+	border-radius:0%;
+	}
+</style>
+<!-- New Moon Scrollbar -->
+
+{% block content %}
+{% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
